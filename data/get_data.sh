@@ -7,6 +7,8 @@ load_file () {
 
     if [ -f "$outputFile" ]
     then
+        echo "$outputFile already exist and will be replaced"
+        echo
         rm "$outputFile"
     fi
 
